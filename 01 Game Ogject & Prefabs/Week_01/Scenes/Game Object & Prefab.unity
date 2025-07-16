@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteriod Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3347672628353174814, guid: 62ee9b5c56fbc9e4b9137375af01fa1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5506353050590725696, guid: 62ee9b5c56fbc9e4b9137375af01fa1f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -198,6 +202,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3347672628353174814, guid: 62ee9b5c56fbc9e4b9137375af01fa1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 108693496}
+    - targetCorrespondingSourceObject: {fileID: 3347672628353174814, guid: 62ee9b5c56fbc9e4b9137375af01fa1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 108693497}
   m_SourcePrefab: {fileID: 100100000, guid: 62ee9b5c56fbc9e4b9137375af01fa1f, type: 3}
 --- !u!1 &108693495 stripped
 GameObject:
@@ -250,6 +257,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.5, y: 2.33}
   m_EdgeRadius: 0
+--- !u!114 &108693497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108693495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f467c9d72631364da3da7fc5e6d4db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 7c6a2453c01b7f3469ff4f8c589b8b38, type: 3}
 --- !u!1001 &548210911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -301,6 +321,10 @@ PrefabInstance:
     - target: {fileID: 7387669839263101779, guid: 6b6ae9b1c4a794540b4e4571fffaf3df, type: 3}
       propertyPath: m_Name
       value: Asteriod (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387669839263101779, guid: 6b6ae9b1c4a794540b4e4571fffaf3df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -513,6 +537,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1375036465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375036467}
+  - component: {fileID: 1375036466}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1375036466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375036465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586607f2883ce1041906fda93f9d8442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AsteroidPrefab: {fileID: 1577296017}
+--- !u!4 &1375036467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375036465}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1577296017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5475767953941882320, guid: 3fb72922e5bf1a64e8390611b39081d8, type: 3}
+  m_PrefabInstance: {fileID: 2236039844570427131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2236039844570427131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -524,6 +598,10 @@ PrefabInstance:
     - target: {fileID: 5475767953941882320, guid: 3fb72922e5bf1a64e8390611b39081d8, type: 3}
       propertyPath: m_Name
       value: Asteroid_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475767953941882320, guid: 3fb72922e5bf1a64e8390611b39081d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559391425523530531, guid: 3fb72922e5bf1a64e8390611b39081d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -622,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8821874446243827647, guid: 107197d538ca7cf439308f304c52fa97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -683,6 +765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteriod
       objectReference: {fileID: 0}
+    - target: {fileID: 7387669839263101779, guid: 6b6ae9b1c4a794540b4e4571fffaf3df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -702,3 +788,4 @@ SceneRoots:
   - {fileID: 7477847916021856119}
   - {fileID: 2236039844570427131}
   - {fileID: 108693494}
+  - {fileID: 1375036467}
